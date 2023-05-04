@@ -1,0 +1,71 @@
+﻿ul{
+    list-style:none;
+}
+a:hover {
+    color: white;
+}
+.navbar {
+    background-color: white !important;
+}
+.navbar a {
+    color: black !important;
+}
+.navbar-brand {
+    margin-right: 5%;
+}
+.logo span {
+    color: rgb(242, 159, 5) !important;
+}
+.navbar button {
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(242, 159, 5);
+}
+.navbar button a {
+    color: white !important;
+    font-weight: 600;
+}
+footer {
+    background-color: #363636 !important;
+    color: white !important;
+    position: relative !important;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+
+}
+footer .row {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.footer-menu{
+    padding:0px;
+}
+.footer-contant{
+    text-align:start;
+}
+.footer-contant h2 {
+    white-space: break-spaces;
+    width: 368px;
+    line-height: 52px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: start;
+}
+.footer-contant p {
+    white-space: break-spaces;
+    line-height: 1.5;
+    text-align: start;
+}
+.first-col{
+    margin-right:50px
+}
+
+footer .logo {
+    font-size: 30px;
+    text-align:start;
+    font-weight: 500;
+} 

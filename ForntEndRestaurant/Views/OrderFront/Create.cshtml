@@ -1,0 +1,97 @@
+﻿@model WebApplication1.Models.Order
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Order</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group order">
+                 <label for="res">Choose a Resturant</label>
+                <select  name="res" id="res">
+                    <option value="Mac">Mac</option>
+                    <option value="Burger King">Burger King</option>
+                    <option value="Koshari We Daka">Koshari We Daka</option>
+                    <option value="Etiole">Etiole</option>
+                    <option value="Elhaty ">Elhaty </option>
+                    <option value="GAD">GAD</option>
+                    <option value="FoodGun">FoodGun</option>
+                    <option value="Gamabary">Gamabary</option>
+                </select>
+             </div>
+            <div class="form-group order">
+                <label for="cat">Choose a Category</label>
+                <select name="cat" id="cat">
+                    <option value="Burger">Burger</option>
+                    <option value="Chicken">Chicken</option>
+                    <option value="Meat">Meat</option>
+                    <option value="Soup">Soup</option>
+                    <option value="Salad">Salad</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Fish ">Fish </option>
+                    <option value="Drinks">Drinks</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Pasta">Pasta</option>
+                    <option value="BreakFast">BreakFast</option>
+                </select>
+            </div>
+            <div class="form-group order">
+                <label for="food">Choose a Food</label>
+                <select name="food" id="food">
+                    <option value="Cheese Burger">Cheese Burger</option>
+                    <option value="Butter Chicken">Butter Chicken</option>
+                    <option value="Chicken 🐔 Soup ">Chicken 🐔 Soup </option>
+                    <option value="Pancake">Pancake</option>
+                    <option value="Chips">Chips</option>
+                    <option value="Lasagna Flatbread">Lasagna Flatbread</option>
+                    <option value="Country Potato ">Country Potato </option>
+                    <option value="chili">chili</option>
+                    <option value="Koshari">Koshari</option>
+                    <option value="Tuna Salad">Tuna Salad</option>
+                    <option value="Green Salad">Green Salad</option>
+                    <option value="Cheese Cake">Cheese Cake</option>
+                    <option value="Ice Cream">Ice Cream</option>
+                    <option value="Shrimp">Shrimp</option>
+                    <option value="Egg">Egg</option>
+                    <option value="shawrma">shawrma</option>
+                    <option value="MilkShake">MilkShake</option>
+                    <option value="Shrimp Pizza">Shrimp Pizza</option>
+                    <option value="Red Sauce Macaroni">Red Sauce Macaroni</option>
+                    <option value="Kofta">Kofta</option>
+                    <option value="Fudge Sundae">Fudge Sundae</option>
+                    <option value="Fool">Fool</option>
+                </select>
+            </div>
+       
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <hr />
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
